@@ -1,0 +1,9 @@
+@import './transition/index.scss';
+@import './var/index.scss';
+@import './variable.scss';
+@import './reset.scss';
+@import './comp.scss';
+
+html[grayMode='true'] {
+  filter: grayscale(100%);
+}

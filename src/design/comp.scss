@@ -1,0 +1,90 @@
+.el-menu {
+  border-right: none !important;
+}
+
+*,
+::before,
+::after {
+  border-color: var(--el-border-color);
+}
+
+html.dark {
+  --el-bg-color-page: #494949;
+  --el-bg-color: #1f1f1f;
+  --el-bg-color-overlay: #252525;
+  --el-mask-color: rgb(34 34 34 / 80%);
+  --el-color-primary-light-9: #0c4a6e;
+
+  background-color: #1f1f1f;
+
+  .el-switch {
+    --el-switch-on-color: var(--el-color-primary);
+  }
+}
+
+.el-tabs__item.is-active {
+  font-weight: 800;
+}
+
+.el-sub-menu.is-active > .el-sub-menu__title {
+  position: relative;
+  color: var(--el-color-primary);
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-left: calc(var(--el-menu-base-level-padding) + var(--el-menu-level) * var(--el-menu-level-padding));
+    left: -12px;
+    top: 30%;
+    height: 40%;
+    width: 4px;
+    background-color: var(--el-color-primary);
+    border-radius: 4px;
+  }
+}
+
+.el-overlay-dialog {
+  overflow-y: hidden;
+}
+
+.el-dialog {
+  margin: var(--el-dialog-margin-top, 15vh) auto 50px;
+  min-width: 375px;
+}
+
+.el-dialog__body {
+  overflow: hidden;
+  position: relative;
+  padding: var(--el-dialog-padding-primary) 0 !important;
+}
+
+.el-dialog__body > * {
+  max-height: calc(85vh - 80px - var(--el-dialog-padding-primary) * 2);
+}
+
+.el-descriptions__cell {
+  word-break: keep-all;
+}
+
+.el-input__wrapper {
+  width: 100%;
+}
+
+.el-card__body {
+  height: 100%;
+}
+
+.el-descriptions__content {
+  word-break: break-all;
+}
+
+.el-range-input[readonly] {
+  pointer-events: none;
+}
+
+.el-dialog__header {
+  border-bottom: 1px solid var(--el-border-color);
+  padding-right: 16px;
+  margin-right: 0;
+}

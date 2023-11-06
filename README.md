@@ -2,7 +2,7 @@
 
 # 操作录屏
 
-<video src="./screenshot/操作录屏.mp4" control></video>
+<image src="./screenshot/sample.gif" ></image>
 
 # 代码参考
 
